@@ -1,0 +1,593 @@
+/* страница leftsidebar */
+
+.sidebar .label-text .block_plus{
+	width: 16px;
+	height: 16px;
+	border: 1px solid #E6E6E6;
+	margin-top: 8px;
+	position: relative;
+}
+.sidebar .label-text .block_plus span{
+	width: 10px;
+	height: 2px;
+	position: absolute;
+	background-color: #7C7C7C;
+	top: 6px;
+	left: 2px;
+}
+.sidebar .label-text .block_plus .span_vertical{
+	transform: rotate(90deg);
+	transition: .3s;
+}
+.sidebar .list_cat_manu{
+	padding-left: 35px;
+	display: none;
+}
+.sidebar .list_cat_manu ul li a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+/* страница главная */
+
+
+
+.socials .addresses{
+    position: relative;
+}
+
+.socials .addresses .addresses_list{
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    min-width: 250px;
+    display: none;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+    left: -60px;
+}
+
+.socials .addresses .addresses_list ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    width: 100%;
+    
+}
+
+.socials .addresses .addresses_list ul li{
+    cursor: pointer;
+    
+}
+.socials .addresses .addresses_list ul li a{
+    padding-left: 25px;
+    font-size: 16px;
+}
+.socials .addresses .addresses_list ul li:hover{
+    background-color: #F1F1F1;
+}
+
+.socials .addresses:hover .addresses_list{
+    display: block;
+    transition: .5s;
+}
+
+.detalis_wrapper_content{
+    display: flex;
+}
+
+.important_information{
+    width: 270px;
+    height: auto;
+    border: 1px solid #CDCDCD;
+}
+.important_information .information_purchase{
+    display: flex;
+    
+}
+.information_icon{
+    border: 1px solid #CDCDCD;
+    width: 23px;
+    height: 25px;
+    margin: 10px 10px 0 10px;
+}
+
+
+.important_information .information_purchase .information_text{
+    border-left: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+    width: 100%;
+    padding: 5px 0 0 5px;
+}
+.important_information .information_purchase_second .information_text{
+    border-bottom: none;
+}
+.important_information .purchase_last,
+.important_information .purchase_three{
+    height: 50px;
+}
+.important_information .information_purchase .information_text p{
+    margin: 0;
+}
+
+.details-infor .product-subtitle,
+.details-infor .product-article{
+    margin-bottom: 10px;
+}
+
+.details-infor .bonuses{
+    display: flex;
+    
+}
+
+.details-infor .bonuses .bonuses_price{
+    border: 1px solid #CDCDCD;
+    height: 20px;
+    box-sizing: border-box;
+    padding: 0 3px;
+}
+.details-infor .bonuses .bonuses_price p{
+    line-height: 18px;
+}
+.details-infor .bonuses p{
+    margin-bottom: 0;
+}
+.details-infor .bonuses .bonuses_txt{
+    margin: 0 10px;
+}
+.details-infor .quantity-add-to-cart{
+    margin-bottom: 10px;
+}
+
+.details-infor .size-chart-wrapp{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+/* .photo_products .photo_products_icon{
+    margin: 0 5px 0 0;
+} */
+
+.widget-related-products .stars-rating .count-star{
+    padding: 5px 0 0 5px;
+    border-left: 1px solid #CDCDCD;
+}
+.widget-related-products .stars-rating{
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+.widget-related-products .stars-rating .star-rating{
+    margin: 6px 10px 0 10px;
+}
+.widget-related-products .stars-rating p{
+    margin: 0;
+}
+
+.product-details-description ul{
+    padding: 0;
+}
+.product-details-description ul li{
+    list-style: none;
+    display: flex;
+}
+
+.product-details-description ul > li + li{
+    margin-top: 5px;
+}
+
+.product-details-description .information_icon{
+    margin: 0;
+    width: 15px;
+    height: 19px;
+    position: relative;
+    margin: 0 10px 0 0 ;
+}
+
+.product-details-description .information_icon span{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.size-chart-wrapp .size_card_content a i{
+    margin: 0 5px 0 0;
+}
+
+/*  личный кабинет */
+.profile{
+    padding: 0 0 70px 0;
+    border-top: 1px solid #CDCDCD;
+}
+.profile_container{
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile .info_porofile{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 55%;
+}
+.profile .info_porofile > div{
+    width: 300px;
+    height: 210px;
+    margin-top: 50px;
+    border: 1px solid #CDCDCD;
+    padding: 5px 0 0 0;
+}
+.profile .info_porofile div .orders_info ul li {
+   list-style-type: decimal;
+}
+
+.profile .info_porofile div .orders_info ul li .span_info {
+    border: 1px solid #CDCDCD;
+    padding: 5px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: 500;
+}
+.profile .info_porofile div .orders_info ul .equip .span_info_equip,
+.profile .info_porofile div .orders_info ul .canceled .span_info_canceled{
+    background: repeating-linear-gradient(-60deg,#858585, transparent 1px, transparent 14px);
+}
+.profile .info_porofile .orders_info .show_all{
+    padding: 0 0 0 9px;
+}
+
+
+.profile .info_porofile .orders .orders_title{
+    padding: 0 0 0 35px;
+}
+.profile .info_porofile .orders_info ul{
+    padding: 0 0 0 25px;
+}
+.profile .info_porofile .bonuses_and_discounts p{
+    margin: 0 0 25px 0;
+    padding: 0 0 0 10px;
+}
+.profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_title{
+    padding: 0 0 0 10px;
+    margin: 0 0 20px 0 ;
+}
+.profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_bonuses span{
+    border: 1px solid #CDCDCD;
+    padding: 2px;
+    color: #333;
+    font-weight: 500;
+}
+.profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_sum span{
+    color: #111111;
+    font-weight: 500;
+}
+.profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_discount span{
+    border: 1px solid #CDCDCD;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 0 0 5px;
+    font-weight: 500;
+    color: #333;
+    
+}
+.profile .info_porofile .user_info  .user_photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.profile .info_porofile .user_info  .user_photo img{
+    width: 100%;
+    height: 100%;
+}
+.profile .info_porofile .user_info{
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0 0 0;
+}
+.profile .info_porofile .user_info .user_info_content .user_name{
+    font-weight: 600;
+}
+.profile .info_porofile .user_info .user_info_content p{
+   margin: 0;
+}
+.profile .info_porofile .user_info .user_info_content a{
+    font-size: 14px;
+}
+.profile .info_porofile .chosen .chosen_title{
+    padding: 0 0 0 30px;
+}
+.profile .info_porofile .chosen .chosen_galery{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 0 30px;
+}
+.profile .info_porofile .chosen .chosen_galery div{
+    width: 60px;
+    height: 60px;
+    flex: 0 0 33.33%;
+    margin: 10px 0 0 0;
+}
+.profile .profile_capabilities{
+    padding: 48px 0 0 0;
+}
+.profile .profile_capabilities > div{
+    display: flex;
+}
+.profile .profile_capabilities > div .my_icon{
+    width: 23px;
+    height: 25px;
+    border: 1px solid #CDCDCD;
+    margin: 0 10px 0 0;
+}
+.profile .profile_capabilities .my_messages{
+    margin: 10px 0 0 0;
+}
+.profile .profile_capabilities .my_messages .my_messages_content{
+    position: relative;
+}
+.profile .profile_capabilities .my_messages .my_messages_content .messages_quantity{
+    position: absolute;
+    top: -6px;
+    right: -18px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CDCDCD;
+    text-align: center;
+}
+.profile .profile_capabilities .my_messages .my_messages_content .messages_quantity p{
+    margin: -3px 0 0 0;
+}
+/* Корзина */
+
+
+.order_right_price{
+    background-color: #F2F2F2;
+    padding: 5px;
+    width: 420px;
+    height: 500px;
+    margin: 160px 0 0 0;
+    border-radius: 5px;
+}
+
+
+.site-content .shoping_cart_wrapper{
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+}
+.site-content .order_price{
+    width: 370px;
+    height: 400px;
+    margin: 15px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 25px;
+}
+.site-content .order_price .special_coupon .special_coupon_title{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.site-content .order_price .special_coupon .special_coupon_title p{
+    margin: 0;
+}
+.site-content .order_price .special_coupon .special_coupon_content{
+    display: none;
+    position: absolute;
+    width: 15%;
+    background-color: #fff;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.site-content .order_price .special_coupon .special_coupon_content ul{
+    padding: 0;
+}
+.site-content .order_price .special_coupon .special_coupon_content ul li{
+    list-style: none;
+    padding: 0 0 0 17px;
+}
+.site-content .order_price .special_coupon .special_coupon_content ul li:hover{
+    background-color: #F1F1F1
+}
+.site-content .order_price .aliexpress_coupon{
+    margin: 10px 0 10px 0;
+}
+.site-content .promo_code{
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+.site-content .promo_code a{
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid#E9E9E9 ;
+    margin: 0;
+}
+.site-content .promo_code a:hover{
+    background-color: #aa4d81;
+    color: #fff;
+}
+
+.site-content .order_price .button{
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid#E9E9E9 ;
+    width: 100%;
+}
+
+.site-content .order_price .button:hover{
+    background-color: #aa4d81;
+    color: #fff;
+}
+
+
+
+.site-content .promo_code input{
+    width: 170px;
+}
+
+.bonuses_pay input{
+    display: none;
+}
+
+.bonuses_price p span{
+    color: #000;
+    font-weight: 600;
+}
+.bonuses_pay{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.bonuses_pay .label-text{
+    position: relative;
+    padding: 0 0 0 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bonuses_pay input[type="checkbox"] + label::after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: 0;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    border: solid 1px #eeeeee;
+    border-radius: 0;
+
+
+}
+
+.bonuses_pay input[type="checkbox"]:checked + label::before {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    display: inline-block;
+    top: 5px;
+    left: 2px;
+    width: 15px;
+    height: 14px;
+    text-align: center;
+    font-size: 10px;
+    color: #222;
+    position: absolute;
+    z-index: 2;
+    padding: 0;
+    line-height: 14px;
+    color: #65a293;
+}
+
+.order_price .all_price{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid#E9E9E9;
+    margin: 15px 0 0 0;
+    padding: 15px 0 0 0;
+}
+
+.order_price .all_price h5{
+    font-size: 20px;
+}
+.order_price .all_price h6{
+    padding: 5px 0 0 0;
+}
+.order_right_price .user_agreement{
+    font-size: 12px;
+    padding: 0 0 0 7px;
+}
+.order_right_price .user_agreement a{
+    border-bottom: 1px solid #B2B2B2;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px){
+    .site-content .shoping_cart_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .order_right_price{
+        margin: 0 auto;
+        height: 520px;
+    }
+    .site-content{
+        padding: 0 0 50px 0;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .profile_container {
+        width: 100%;
+    }
+    .profile .info_porofile{
+        width: 65%;
+    }
+    .site-content .shoping_cart_wrapper{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .profile .info_porofile{
+        width: 40%;
+    }
+    .detalis_wrapper_content{
+        flex-wrap: wrap;
+    }
+    .sudebar_details_sidebar{
+        position: absolute;
+        top: 75%;
+    }
+    .tab-details-product{
+        margin-top: 600px;
+    }
+   
+}
+@media screen and (max-width: 420px){
+    .profile_container{
+        flex-direction: column-reverse;
+    }
+    .profile .info_porofile {
+        width: 100%;
+        justify-content: center;
+    }
+    .profile .profile_capabilities {
+        padding: 48px 0 0 56px;
+    }
+    .sudebar_details_sidebar{
+       top: 147%;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .profile .profile_capabilities {
+        padding: 48px 0 0 40px;
+    }
+    .order_right_price{
+        height: auto;
+    }
+    .site-content .order_price{
+        width: 90%;
+        padding: 10px;
+    }
+    .sudebar_details_sidebar{
+        top: 160%;
+     }
+}
+
+
+
