@@ -126,7 +126,7 @@
 }
 
 .details-infor .bonuses .bonuses_price{
-    border: 1px solid #CDCDCD;
+    border: 1px solid #65A293;
     height: 20px;
     box-sizing: border-box;
     padding: 0 3px;
@@ -664,6 +664,16 @@
     }
     .sudebar_details_sidebar{
        top: 147%;
+    }
+    .profile .info_porofile > div{
+        padding: 5px 0 0 20px;
+
+    }
+    .profile .info_porofile .user_info{
+        height: auto;
+    }
+    .profile .info_porofile .user_info .uder_info_content{
+        flex-wrap: wrap;
     }
     
 
