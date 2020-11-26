@@ -228,7 +228,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 55%;
+    width: 65%;
 }
 .profile .info_porofile > div{
     width: 300px;
