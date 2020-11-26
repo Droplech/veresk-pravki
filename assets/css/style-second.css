@@ -218,11 +218,11 @@
     border-top: 1px solid #CDCDCD;
 }
 .profile_container{
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .profile .info_porofile{
     display: flex;
@@ -234,38 +234,60 @@
     width: 300px;
     height: 210px;
     margin-top: 50px;
-    border: 1px solid #CDCDCD;
-    padding: 5px 0 0 0;
+    border: 1px solid #f3f3f3;
+    /* border-top: 2px solid #65a293; */
+    padding: 5px 0 0 30px;
 }
+.profile .info_porofile > div h4{
+    position: relative;
+}
+.profile .info_porofile > div h4::before{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #65a293;
+    position: absolute;
+    top: 27px;
+}
+
+
+
 .profile .info_porofile div .orders_info ul li {
    list-style-type: decimal;
    font-size: 14px;
 }
 
 .profile .info_porofile div .orders_info ul li .span_info {
-    border: 1px solid #CDCDCD;
+    /* border: 1px solid #CDCDCD; */
     padding: 5px;
     border-radius: 5px;
-    color: #333;
+    color: #fff;
     font-weight: 500;
+    background-color: #65A293;
 }
 .profile .info_porofile div .orders_info ul .equip .span_info_equip,
 .profile .info_porofile div .orders_info ul .canceled .span_info_canceled{
-    background: repeating-linear-gradient(-60deg,#858585, transparent 1px, transparent 14px);
+    background: repeating-linear-gradient(-60deg,#000000, transparent 1px, transparent 14px);
+    background-color: #AA4D81;
+}
+.profile .info_porofile div .orders_info ul .canceled .span_info_canceled{
+    background-color:#F3F3F3;
+    color:#333;
 }
 .profile .info_porofile .orders_info .show_all{
-    padding: 0 0 0 9px;
+    /* padding: 0 0 0 9px; */
     font-size: 14px;
 }
 
 
 .profile .info_porofile .orders .orders_title{
-    padding: 0 0 0 35px;
-    font-size: 15px;
+    
+    font-size: 16px;
+    font-weight: 600;
 }
-.profile .info_porofile .orders_info ul{
+/* .profile .info_porofile .orders_info ul{
     padding: 0 0 0 25px;
-}
+} */
 .profile .info_porofile .bonuses_and_discounts p{
     margin: 0 0 25px 0;
     padding: 0 0 0 10px;
@@ -274,25 +296,27 @@
 .profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_title{
     padding: 0 0 0 10px;
     margin: 0 0 20px 0 ;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
 }
 .profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_bonuses span{
-    border: 1px solid #CDCDCD;
+    border: 1px solid #65a293;
     padding: 2px;
     color: #333;
     font-weight: 500;
 }
 .profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_sum span{
-    color: #111111;
+    color: #65a293;
     font-weight: 500;
 }
 .profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_discount span{
-    border: 1px solid #CDCDCD;
+    
     border-radius: 50%;
     padding: 5px;
     margin: 0 0 0 5px;
     font-weight: 500;
-    color: #333;
+    color: #fff;
+    background-color: #aa4d81;
     
 }
 .profile .info_porofile .user_info  .user_photo{
@@ -300,6 +324,7 @@
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
+    margin: 0 25px 0 0;
     
 }
 .profile .info_porofile .user_info  .user_photo img{
@@ -307,13 +332,31 @@
     height: 100%;
 }
 .profile .info_porofile .user_info{
-    display: flex;
-    justify-content: space-around;
-    padding: 45px 0 0 0;
+    
+    
+    padding: 5px 0 0 30px;
 }
+.profile .info_porofile .user_info .user_info_title{
+    margin: 0 0 35px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.profile .info_porofile .user_info .uder_info_content{
+    display: flex;
+}
+
 .profile .info_porofile .user_info .user_info_content .user_name{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
+    position: relative;
+}
+.profile .info_porofile .user_info .user_info_content .user_name::before{
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 30px;
+    height: 2px;
+    background-color: #65a293;
 }
 .profile .info_porofile .user_info .user_info_content p{
    margin: 0;
@@ -323,13 +366,14 @@
     font-size: 14px;
 }
 .profile .info_porofile .chosen .chosen_title{
-    padding: 0 0 0 30px;
-    font-size: 15px;
+    
+    font-size: 16px;
+    font-weight: 600;
 }
 .profile .info_porofile .chosen .chosen_galery{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 0 0 30px;
+    
 }
 .profile .info_porofile .chosen .chosen_galery div{
     width: 60px;
@@ -339,6 +383,7 @@
 }
 .profile .profile_capabilities{
     padding: 48px 0 0 0;
+    margin-right: 20px;
 }
 .profile .profile_capabilities > div{
     display: flex;
@@ -352,7 +397,9 @@
     border: 1px solid #CDCDCD;
     margin: 0 10px 0 0;
 }
-
+.profile .profile_capabilities .my_reviews a i{
+    font-size: 17px;
+}
 .profile .profile_capabilities .my_messages{
     margin: 10px 0 0 0;
 }
@@ -382,13 +429,13 @@
     padding: 5px;
     width: 420px;
     height: 500px;
-    margin: 160px 0 0 0;
+    margin: 138px 0 0 0;
     border-radius: 5px;
 }
 
 
 .site-content .shoping_cart_wrapper{
-    width: 1500px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
 }
@@ -417,7 +464,7 @@
     display: none;
     position: absolute;
     width: 15%;
-    background-color: #fff;
+    background-color: #F3F3F3;
     z-index: 2;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -428,9 +475,7 @@
     list-style: none;
     padding: 0 0 0 17px;
 }
-.site-content .order_price .special_coupon .special_coupon_content ul li:hover{
-    background-color: #F1F1F1
-}
+
 .site-content .order_price .aliexpress_coupon{
     margin: 10px 0 10px 0;
 }
@@ -451,9 +496,13 @@
 }
 
 .site-content .order_price .button{
-    background-color: #fff;
-    color: #000000;
+    background-color: #65a293;
+    color: #fff;
     border: 1px solid#E9E9E9 ;
+    width: 130px;
+}
+.site-content .order_price .button_allprice{
+    background-color: #aa4d81;
     width: 100%;
 }
 
@@ -462,7 +511,9 @@
     color: #fff;
 }
 
-
+.site-content .order_price .button_allprice:hover{
+    background-color: #65a293;
+}
 
 .site-content .promo_code input{
     width: 170px;
