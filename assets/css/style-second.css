@@ -19,6 +19,7 @@
 	transform: rotate(90deg);
 	transition: .3s;
 }
+
 .sidebar .list_cat_manu{
 	padding-left: 35px;
 	display: none;
@@ -79,14 +80,17 @@
 .important_information{
     width: 270px;
     height: auto;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #f3f3f3;
+    border-top: 2px solid #65a293;
 }
 .important_information .information_purchase{
     display: flex;
     
 }
+.important_information .information_icon{
+    border: 1px solid #CDCDCD ;
+}
 .information_icon{
-    border: 1px solid #CDCDCD;
     width: 23px;
     height: 25px;
     margin: 10px 10px 0 10px;
@@ -94,8 +98,8 @@
 
 
 .important_information .information_purchase .information_text{
-    border-left: 1px solid #CDCDCD;
-    border-bottom: 1px solid #CDCDCD;
+    border-left: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
     width: 100%;
     padding: 5px 0 0 5px;
 }
@@ -108,6 +112,7 @@
 }
 .important_information .information_purchase .information_text p{
     margin: 0;
+    font-size: 14px;
 }
 
 .details-infor .product-subtitle,
@@ -139,7 +144,7 @@
     margin-bottom: 10px;
 }
 
-.details-infor .size-chart-wrapp{
+.size-chart-wrapp{
     text-align: center;
     padding: 20px 0 0 0;
 }
@@ -162,6 +167,7 @@
 }
 .widget-related-products .stars-rating p{
     margin: 0;
+    font-size: 14px;
 }
 
 .product-details-description ul{
@@ -183,11 +189,23 @@
     position: relative;
     margin: 0 10px 0 0 ;
 }
+.product-details-description .information_icon img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 .product-details-description .information_icon span{
     position: absolute;
     top: -2px;
     left: -2px;
+}
+
+.kt-popup-quickview  .details-infor .information_icon span{
+    top: -3px;
+    left: -3px;
 }
 
 .size-chart-wrapp .size_card_content a i{
@@ -221,6 +239,7 @@
 }
 .profile .info_porofile div .orders_info ul li {
    list-style-type: decimal;
+   font-size: 14px;
 }
 
 .profile .info_porofile div .orders_info ul li .span_info {
@@ -236,11 +255,13 @@
 }
 .profile .info_porofile .orders_info .show_all{
     padding: 0 0 0 9px;
+    font-size: 14px;
 }
 
 
 .profile .info_porofile .orders .orders_title{
     padding: 0 0 0 35px;
+    font-size: 15px;
 }
 .profile .info_porofile .orders_info ul{
     padding: 0 0 0 25px;
@@ -248,10 +269,12 @@
 .profile .info_porofile .bonuses_and_discounts p{
     margin: 0 0 25px 0;
     padding: 0 0 0 10px;
+    font-size: 14px;
 }
 .profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_title{
     padding: 0 0 0 10px;
     margin: 0 0 20px 0 ;
+    font-size: 15px;
 }
 .profile .info_porofile .bonuses_and_discounts .bonuses_and_discounts_bonuses span{
     border: 1px solid #CDCDCD;
@@ -290,15 +313,18 @@
 }
 .profile .info_porofile .user_info .user_info_content .user_name{
     font-weight: 600;
+    font-size: 15px;
 }
 .profile .info_porofile .user_info .user_info_content p{
    margin: 0;
+   font-size: 14px;
 }
 .profile .info_porofile .user_info .user_info_content a{
     font-size: 14px;
 }
 .profile .info_porofile .chosen .chosen_title{
     padding: 0 0 0 30px;
+    font-size: 15px;
 }
 .profile .info_porofile .chosen .chosen_galery{
     display: flex;
@@ -317,12 +343,16 @@
 .profile .profile_capabilities > div{
     display: flex;
 }
+.profile .profile_capabilities > div > a{
+    font-size: 15px;
+}
 .profile .profile_capabilities > div .my_icon{
     width: 23px;
     height: 25px;
     border: 1px solid #CDCDCD;
     margin: 0 10px 0 0;
 }
+
 .profile .profile_capabilities .my_messages{
     margin: 10px 0 0 0;
 }
@@ -336,11 +366,14 @@
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    border: 1px solid #CDCDCD;
+    padding: 1px 0 0 0;
     text-align: center;
+    background-color: #aa4d81;
 }
 .profile .profile_capabilities .my_messages .my_messages_content .messages_quantity p{
     margin: -3px 0 0 0;
+    color: #fff;
+    font-size: 12px;
 }
 /* Корзина */
 
@@ -363,10 +396,13 @@
     width: 370px;
     height: 400px;
     margin: 15px auto;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border:1px solid #F1F1F1;
     background-color: #fff;
     padding: 25px;
+}
+.site-content .order_price .order_price_title{
+    font-size: 20px;
+    color: #222222;
 }
 .site-content .order_price .special_coupon .special_coupon_title{
     display: flex;
@@ -437,8 +473,8 @@
 }
 
 .bonuses_price p span{
-    color: #000;
-    font-weight: 600;
+    color: #333333;
+    font-weight: 500;
 }
 .bonuses_pay{
     display: flex;
@@ -496,9 +532,12 @@
 
 .order_price .all_price h5{
     font-size: 20px;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
 }
 .order_price .all_price h6{
     padding: 5px 0 0 0;
+    font-weight: 500;
 }
 .order_right_price .user_agreement{
     font-size: 12px;
@@ -542,7 +581,7 @@
 }
 @media screen and (max-width: 768px){
     .profile .info_porofile{
-        width: 40%;
+        width: 100%;
     }
     .detalis_wrapper_content{
         flex-wrap: wrap;
@@ -554,11 +593,16 @@
     .tab-details-product{
         margin-top: 600px;
     }
+    .profile_container{
+        flex-direction: column-reverse;
+        width: 40%;
+    }
    
 }
 @media screen and (max-width: 420px){
     .profile_container{
         flex-direction: column-reverse;
+        width: 60%;
     }
     .profile .info_porofile {
         width: 100%;
@@ -570,6 +614,8 @@
     .sudebar_details_sidebar{
        top: 147%;
     }
+    
+
 
 }
 @media screen and (max-width: 375px){

@@ -1,8 +1,5 @@
 $('.list-categories li').click(function(){
     if(!$(this).find('.label-text').hasClass('.active')){
-        $('.list-categories li .label-text').removeClass('.active')
-        $('.list_cat_manu').slideUp()
-        $('.label-text .span_vertical').css("transform","rotate(90deg)")
         $(this).find('.label-text').addClass('.active')
         $(this).find('.list_cat_manu').slideDown()
         $(this).find('.span_vertical').css({
@@ -12,7 +9,7 @@ $('.list-categories li').click(function(){
     }else{
         $(this).find('.label-text').removeClass('.active')
         $(this).find('.list_cat_manu').slideUp()
-        $('.label-text .span_vertical').css("transform","rotate(90deg)")
+        $(this).find('.span_vertical') .css("transform","rotate(90deg)")
     }
 })
 
